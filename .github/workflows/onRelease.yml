@@ -1,7 +1,7 @@
 name: Release code to production
 on:
   push:
-    branches: [main]
+    branches: [master]
 
 jobs: 
   setup-databricks-workflow:
