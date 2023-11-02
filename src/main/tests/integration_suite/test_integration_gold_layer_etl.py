@@ -11,6 +11,10 @@ sys.path.append(os.path.abspath(f"/Workspace/Repos/{username}/cicd_with_databric
 
 # COMMAND ----------
 
+# MAGIC %run ../../python/gold/gold_layer_etl.py
+
+# COMMAND ----------
+
 from gold_layer_etl import GoldAggregations
 from pyspark.sql.functions import col
 
