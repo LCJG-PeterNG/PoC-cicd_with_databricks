@@ -36,6 +36,7 @@ def test_scd2_transform():
     assert customer_dim_df.groupBy('customer_id').agg(
         max('end_date')).filter(col('max(end_date)') != end_date).count() == 0
     spark.sql(f"drop table if exists {user}_silver_db_test.silver_customers")
+    assert 1 == 1
 
 
 # Run the unit tests
