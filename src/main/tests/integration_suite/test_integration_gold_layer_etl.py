@@ -11,7 +11,7 @@ sys.path.append(os.path.abspath(f"/Workspace/Repos/{username}/PoC-cicd_with_data
 
 # COMMAND ----------
 
-# MAGIC %run ../../python/gold/gold_layer_etl.py
+# %run ../../python/gold/gold_layer_etl
 
 # COMMAND ----------
 
