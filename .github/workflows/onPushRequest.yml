@@ -48,7 +48,7 @@ jobs:
            
   run-integration-tests:
    needs:
-     - run-unit-tests
+     - linting
    runs-on: ubuntu-latest
    
    steps:
