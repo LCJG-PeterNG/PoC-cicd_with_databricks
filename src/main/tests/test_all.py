@@ -8,7 +8,7 @@ username = dbutils.notebook.entry_point.getDbutils(
 
 # COMMAND ----------
 
-abs_path = f"/Repos/{username}/cicd_with_databricks/src/main/tests"
+abs_path = f"/Repos/{username}/PoC-cicd_with_databricks/src/main/tests"
 
 # COMMAND ----------
 

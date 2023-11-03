@@ -15,7 +15,7 @@ user = username[:username.index("@")].replace('.', '_')
 
 source_dataset = 'customers'
 target_path = f'/FileStore/{username}_bronze_db_test/'
-abs_path = f'/Repos/{username}/cicd_with_databricks/src/main/tests/'
+abs_path = f'/Repos/{username}/PoC-cicd_with_databricks/src/main/tests/'
 
 # COMMAND ----------
 

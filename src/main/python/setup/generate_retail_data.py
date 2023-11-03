@@ -24,6 +24,7 @@ username = (
     .replace(".", "_")
 )
 output_dir = f"/FileStore/{username}/retail_dataset/"
+print(f'output_dir: {output_dir}')
 
 # COMMAND ----------
 
