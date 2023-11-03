@@ -20,7 +20,7 @@ default-permissions: &default-permissions
 environments:
   prod:
     jobs:
-      - name: "cicd_jobs"
+      - name: "PoC CICD ELT"
         job_clusters:
           - job_cluster_key: "cluster-setup"
             <<: *basic-static-cluster
