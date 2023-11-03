@@ -24,7 +24,7 @@ jobs:
           dbx deploy \
             --deployment-file=deployment/deploy-job.yaml \
             --environment=prod \
-            --job=cicd_jobs \
+            --job="PoC CICD ELT" \
             --no-rebuild
 
-          dbx launch --environment=prod --trace --job=cicd_jobs
+          dbx launch --environment=prod --trace --job="PoC CICD ELT"
