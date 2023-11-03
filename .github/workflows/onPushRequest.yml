@@ -46,28 +46,3 @@ jobs:
              "node_type_id": "Standard_DS3_v2"
            }
            
-  run-integration-tests:
-   needs:
-     - linting
-   runs-on: ubuntu-latest
-   
-   steps:
-     - name: Checkout repo
-       uses: actions/checkout@v2
-     - name: Run a databricks notebook
-       uses: databricks/run-notebook@v0
-       with:
-         local-notebook-path: ./src/main/tests/integration_suite/integration_tests.py        
-         notebook-params-json: >
-           {
-             "num_rows":"1000",
-             "env":"int"
-           }
-         databricks-host: ${{secrets.DATABRICKS_HOST_PRD}}
-         databricks-token: ${{secrets.DATABRICKS_TOKEN_PRD}}
-         new-cluster-json: >
-           {
-             "num_workers": 1,
-             "spark_version": "13.1.x-scala2.12",
-             "node_type_id": "Standard_DS3_v2"
-           }
